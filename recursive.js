@@ -7,6 +7,12 @@
 // 2': そのコードを GitHub にアップロードする
 
 function factorial (n) {
+  let answer = 1;
+  for (let i = 0; i < n; i++) {
+    answer *= (n - i);
+  }
+
+  return answer;
 }
 
 console.log (factorial (5));
